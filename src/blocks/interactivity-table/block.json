@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "interactivity/interactivity-table",
+	"version": "1.0.0",
+	"title": "Interactivity table",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Show interactivity table based on select",
+	"supports": {
+		"interactivity": true
+	},
+	"textdomain": "interactivity",
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}
