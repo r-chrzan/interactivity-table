@@ -8,9 +8,21 @@
 		array(
 			'state' => array(
 				'interactivity' => array(
-					'currentRegionCode' => 'AK',
+					'currentRegionCode' => 'CA',
 				),
 			),
+			'selectors' => array(
+				'interactivity' => array(
+					'isShown' => function( $store ) {
+						foreach ($store['context']['interactivity']['availableStates'] as $item) {
+							if ($store['state']['interactivity']['currentRegionCode'] == $item) {
+									return true;
+							}
+						}
+						return false;
+					}
+				)
+			)
 		)
 	);
 ?>
